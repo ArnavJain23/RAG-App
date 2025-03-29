@@ -45,6 +45,15 @@ The following features could be added to improve the backend functionality:
 4. **User Authentication and Authorization**:
    - Implement user authentication and authorization to secure the API endpoints. This would allow for personalized experiences and protect sensitive data.
 
+## Challenges Faced
+
+- **Connecting Frontend and Backend**:
+  - Establishing communication between the frontend and backend required the creation of a RESTful API in the backend.
+  - The frontend needed to make HTTP requests to these API endpoints to retrieve and send data.
+  
+- **CORS Issues**:
+  - Encountered Cross-Origin Resource Sharing (CORS) issues when the frontend and backend were hosted on different ports. This required configuring Flask-CORS in the backend to allow requests from the frontend.
+
 ## Setup Instructions
 
 ### Prerequisites
