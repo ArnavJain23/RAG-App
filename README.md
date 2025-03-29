@@ -20,6 +20,31 @@ This application uses LlamaIndex and Anthropic's Claude to create a question-ans
 - **LLM**: Anthropic Claude
 - **Performance**: Thread-based background loading for optimization
 
+## Technologies Used
+
+### 1. Flask
+- **Why Chosen**: Flask is a lightweight and flexible web framework for Python. It is easy to set up and allows for rapid development of web applications. Its simplicity and modularity make it an excellent choice for building RESTful APIs, which is essential for our backend.
+
+### 2. SQLAlchemy
+- **Why Chosen**: SQLAlchemy is a powerful ORM (Object-Relational Mapping) library for Python. It provides a high-level abstraction for database interactions, making it easier to manage database schemas and queries. This helps in maintaining clean and efficient code while ensuring database integrity.
+
+### 3. Flask-CORS
+- **Why Chosen**: Flask-CORS is an extension that allows Cross-Origin Resource Sharing (CORS) in Flask applications. It is essential for enabling the frontend to communicate with the backend, especially when they are hosted on different domains or ports.
+
+The following features could be added to improve the backend functionality:
+
+1. **Chat Session Management**:
+   - Implement a system for managing multiple chat sessions. This would allow users to have concurrent chats without losing context, enhancing the user experience and making the application more versatile.
+
+2. **Multi-Document Support**:
+   - Extend the backend to support multiple documents, allowing users to upload and manage various documents simultaneously. This would be particularly useful for applications that require handling large datasets or multiple sources of information.
+
+3. **Faster Indexing**:
+   - Optimize the indexing process to ensure that new data can be added quickly and efficiently. This could involve implementing background indexing processes or using more efficient data structures to speed up the retrieval and storage of indexed data.
+
+4. **User Authentication and Authorization**:
+   - Implement user authentication and authorization to secure the API endpoints. This would allow for personalized experiences and protect sensitive data.
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -56,7 +81,8 @@ ANTHROPIC_API_KEY=your_api_key_here
 
 ### Running the Web App
 
+Start the backend server by executing:
 ```bash
 python app.py
 ```
-Then open your browser to http://localhost:5000
+The backend will be running at `http://127.0.0.1:8080`. You can verify it by visiting this URL in your web browser.
