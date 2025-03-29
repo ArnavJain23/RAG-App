@@ -1,0 +1,26 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Package distribution and build artifacts
+*.egg-info/
+dist/
+build/
+
+# Environment files
+.env
+rag-env/
+
+# LlamaIndex storage
+index_cache/
+
+# Data files (if you don't want to commit them)
+data/
+
+# IDE files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
